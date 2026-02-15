@@ -16,28 +16,23 @@
   <!-- ══════════════════════════════════════════
        HEADER / NAVIGATION
        ══════════════════════════════════════════ -->
-  <header class="site-header">
-    <div class="container">
+  <header class="site-header" id="header">
+    <nav class="nav-container">
       <a href="index.html" class="nav-logo" aria-label="Rates Goblin AI Home">
           <img src="images/logo-nav.png" alt="Rates Goblin AI" class="nav-logo-img">
       </a>
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="pricing.html" class="active">Pricing</a></li>
-          <li><a href="docs.html">Docs</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-cta">
-        <a href="#" class="btn btn-primary btn-sm">Get Started</a>
-      </div>
-
-      <button class="menu-toggle" aria-label="Toggle navigation">
-        <span>&#9776;</span>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span aria-hidden="true">&#9776;</span>
       </button>
-    </div>
+
+      <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="index.html#cta" class="btn btn-primary btn-nav">Get Started</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- ══════════════════════════════════════════
