@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Transparency & Disclosure for Rate Goblin AI — how we use artificial intelligence, what data is processed, and how we ensure human oversight in construction procurement.">
+    <title>AI Transparency &amp; Disclosure — Rate Goblin AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <header class="site-header" id="header">
+        <nav class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Rate Goblin AI Home">
+                <span class="logo-icon" aria-hidden="true">&#x1F47A;</span>
+                <span class="logo-text">Rate Goblin <span class="logo-ai">AI</span></span>
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span aria-hidden="true">&#9776;</span>
+            </button>
+
+            <ul class="nav-links" id="nav-links" role="list">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="docs.html">Docs</a></li>
+                <li><a href="index.html#cta" class="btn btn-primary btn-nav">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="legal-page">
+            <div class="container">
+
+                <h1>AI Transparency &amp; Disclosure</h1>
+                <p><strong>Last updated:</strong> February 2026</p>
+
+                <!-- ==================== 1. OUR COMMITMENT TO AI TRANSPARENCY ==================== -->
+                <h2>1. Our Commitment to AI Transparency</h2>
+                <p>
+                    Rate Goblin AI is built with transparency at its core. We believe you should always know when AI
+                    is processing your data, what it does with that data, and what its limitations are.
+                </p>
+                <p>
+                    This page explains exactly how artificial intelligence works within our platform. It is written in
+                    plain language so that anyone &mdash; not just technical specialists &mdash; can understand what is
+                    happening behind the scenes.
+                </p>
+                <p>
+                    Our approach to AI transparency has been informed by the
+                    <strong>RICS Global Standard on Responsible Use of AI in Surveying</strong> and the
+                    <strong>CIOB Code of Practice for Project Management</strong> principles. These standards emphasise
+                    accountability, human oversight, and clear disclosure whenever AI is used in professional practice.
+                </p>
+
+                <!-- ==================== 2. AI MODELS WE USE ==================== -->
+                <h2>2. AI Models We Use</h2>
+                <p>
+                    The table below lists every AI model used in Rate Goblin AI, what it does, and who provides it.
+                    We will update this table whenever we add, remove, or change an AI model.
+                </p>
+
+                <div class="table-wrapper">
+                    <table class="legal-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>AI Model</th>
+                                <th>Provider</th>
+                                <th>Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Quote Extraction</td>
+                                <td>GPT-4o</td>
+                                <td>OpenAI</td>
+                                <td>Reads uploaded PDF/Excel files and extracts line items (description, qty, unit, rate, amount)</td>
+                            </tr>
+                            <tr>
+                                <td>Rate Grouping</td>
+                                <td>GPT-4o</td>
+                                <td>OpenAI</td>
+                                <td>Groups similar line items across multiple quotes for comparison</td>
+                            </tr>
+                            <tr>
+                                <td>NRM Classification</td>
+                                <td>GPT-4o</td>
+                                <td>OpenAI</td>
+                                <td>Classifies items against RICS New Rules of Measurement element codes</td>
+                            </tr>
+                            <tr>
+                                <td>Column Mapping</td>
+                                <td>GPT-4o</td>
+                                <td>OpenAI</td>
+                                <td>Auto-detects column structure in uploaded cost plan spreadsheets</td>
+                            </tr>
+                            <tr>
+                                <td>AI Query Assistant</td>
+                                <td>GPT-4o</td>
+                                <td>OpenAI</td>
+                                <td>Answers natural language questions about your quotes and cost data</td>
+                            </tr>
+                            <tr>
+                                <td>Support Chat</td>
+                                <td>GPT-4o Mini</td>
+                                <td>OpenAI</td>
+                                <td>Answers questions about how to use Rate Goblin AI</td>
+                            </tr>
+                            <tr>
+                                <td>Scanned PDF Fallback</td>
+                                <td>GPT-4o Vision</td>
+                                <td>OpenAI</td>
+                                <td>Reads scanned/image-based PDFs when text extraction fails</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ==================== 3. WHAT DATA IS SENT TO AI ==================== -->
+                <h2>3. What Data Is Sent to AI</h2>
+                <p>
+                    We want you to know exactly what information leaves our servers and is sent to an AI provider
+                    for processing. Here is a clear breakdown.
+                </p>
+
+                <h3>3.1 Data That IS Sent</h3>
+                <ul>
+                    <li>Extracted text from your uploaded quotes and cost plans</li>
+                    <li>Line item descriptions, quantities, rates, and amounts</li>
+                    <li>Your natural language questions (when using the AI Query Assistant)</li>
+                    <li>Cost plan section descriptions (when using column mapping or classification features)</li>
+                </ul>
+
+                <h3>3.2 Data That Is NOT Sent</h3>
+                <ul>
+                    <li>Your email address</li>
+                    <li>Your password</li>
+                    <li>Personal identity information</li>
+                    <li>Device fingerprints</li>
+                    <li>Your IP address</li>
+                    <li>Session data or authentication tokens</li>
+                    <li>Other users' data &mdash; your data is isolated and never mixed with another user's data</li>
+                </ul>
+
+                <h3>3.3 How Data Is Transmitted</h3>
+                <p>
+                    All data is sent via <strong>encrypted HTTPS connections</strong>. Data is processed by
+                    OpenAI's API and, in accordance with OpenAI's API data usage policy (as of 2024),
+                    <strong>is not used for model training</strong>. See Section 9 for more detail on OpenAI's
+                    data processing practices.
+                </p>
+
+                <!-- ==================== 4. CONSENT & CONTROL ==================== -->
+                <h2>4. Consent &amp; Control</h2>
+                <p>
+                    You are always in control of whether AI processes your data. Here is how consent works in
+                    Rate Goblin AI:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Explicit consent required:</strong> You must give explicit consent before any AI
+                        feature processes your data. No data is sent to any AI provider until you actively opt in.
+                    </li>
+                    <li>
+                        <strong>Clear consent dialog:</strong> Consent is requested via a clear modal dialog that
+                        explains what data will be processed, which AI model will be used, and what the output will be.
+                    </li>
+                    <li>
+                        <strong>Withdraw at any time:</strong> You can withdraw your AI consent at any time by
+                        navigating to <strong>Settings &gt; AI</strong>. Withdrawing consent immediately stops all
+                        AI processing &mdash; no further data will be sent to any AI provider.
+                    </li>
+                    <li>
+                        <strong>Use Rate Goblin AI without AI:</strong> You can use Rate Goblin AI without AI
+                        features. Manual data entry, benchmarking, and export all work without AI consent.
+                    </li>
+                    <li>
+                        <strong>Auditable consent records:</strong> AI consent is tracked with timestamps and
+                        version numbers, so there is a clear record of when consent was given or withdrawn. This
+                        supports audit compliance.
+                    </li>
+                </ul>
+
+                <!-- ==================== 5. CONFIDENCE SCORING & HUMAN OVERSIGHT ==================== -->
+                <h2>5. Confidence Scoring &amp; Human Oversight</h2>
+                <p>
+                    AI is not infallible. That is why every AI output in Rate Goblin AI includes a confidence score
+                    and is subject to human review before it is finalised.
+                </p>
+
+                <h3>5.1 Confidence Scores</h3>
+                <p>
+                    Every AI-generated output includes a <strong>confidence score</strong> expressed as a percentage
+                    from 0% to 100%. This score indicates how confident the AI model is in its output.
+                </p>
+                <ul>
+                    <li>
+                        <strong style="color: #22c55e;">Green (85%+)</strong> &mdash; High confidence. The AI is
+                        confident in its output, but you should still review it.
+                    </li>
+                    <li>
+                        <strong style="color: #f59e0b;">Amber (70&ndash;84%)</strong> &mdash; Review recommended.
+                        The AI's output may need correction.
+                    </li>
+                    <li>
+                        <strong style="color: #ef4444;">Red (below 70%)</strong> &mdash; Manual check needed. The
+                        AI's output should be treated as a starting point only and verified by a qualified professional.
+                    </li>
+                </ul>
+
+                <h3>5.2 NRM Classification Threshold</h3>
+                <p>
+                    NRM classifications that fall below <strong>85% confidence</strong> are automatically flagged as
+                    <strong>"pending suggestion"</strong> and require manual approval by a qualified quantity surveyor
+                    before they are applied.
+                </p>
+
+                <h3>5.3 AI Disclosure Badges</h3>
+                <p>
+                    All AI-generated content is visually marked with purple <strong>"AI"</strong> disclosure badges
+                    throughout the interface. This ensures you always know which data was machine-generated and which
+                    was entered manually.
+                </p>
+
+                <h3>5.4 QS Sign-Off Workflow</h3>
+                <p>
+                    The QS sign-off workflow ensures that a <strong>named professional reviews and accepts all
+                    AI outputs</strong> before they are finalised. AI outputs remain in a draft state until a
+                    qualified professional has reviewed and approved them.
+                </p>
+
+                <!-- ==================== 6. AI ACCURACY & LIMITATIONS ==================== -->
+                <h2>6. AI Accuracy &amp; Limitations</h2>
+                <p>
+                    We want to be honest about what AI can and cannot do. Here are the known limitations of AI
+                    within Rate Goblin AI:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Extraction accuracy:</strong> Extraction accuracy is typically <strong>80%+</strong>
+                        on well-structured documents. This means that approximately 1 in 5 items may need manual
+                        correction, even in ideal conditions.
+                    </li>
+                    <li>
+                        <strong>Document quality matters:</strong> Accuracy depends heavily on document quality.
+                        Poorly scanned PDFs, handwritten notes, unusual formatting, or non-standard layouts may
+                        significantly reduce accuracy.
+                    </li>
+                    <li>
+                        <strong>NRM misclassification:</strong> The AI may misclassify NRM elements, especially for
+                        unusual, specialist, or highly specific items that do not clearly map to standard NRM categories.
+                    </li>
+                    <li>
+                        <strong>Rate grouping errors:</strong> Rate grouping may incorrectly merge items that appear
+                        similar but are distinct, or split items that should be grouped together.
+                    </li>
+                    <li>
+                        <strong>AI Query Assistant limitations:</strong> The AI Query Assistant derives all figures
+                        from your uploaded data and published benchmarks &mdash; it does not fabricate numbers. However,
+                        it may misinterpret the context of your question or return figures from the wrong part of your
+                        data.
+                    </li>
+                    <li>
+                        <strong>Professional review is essential:</strong> AI outputs should <strong>always</strong> be
+                        reviewed by a qualified professional before any reliance is placed upon them. AI is a tool to
+                        assist professionals, not a replacement for professional judgement.
+                    </li>
+                </ul>
+
+                <!-- ==================== 7. AUDIT TRAIL & COMPLIANCE ==================== -->
+                <h2>7. Audit Trail &amp; Compliance</h2>
+                <p>
+                    Rate Goblin AI maintains a detailed audit trail of all AI operations to support transparency,
+                    accountability, and regulatory compliance.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Operation logging:</strong> Every AI operation is logged with the timestamp, the AI
+                        model used, the confidence score returned, and the user who triggered the operation.
+                    </li>
+                    <li>
+                        <strong>AI Disclosure Appendix:</strong> An AI Disclosure Appendix is available for every
+                        quote and cost plan. This appendix lists all AI operations performed on that document, providing
+                        a complete record for professional review.
+                    </li>
+                    <li>
+                        <strong>Edit history:</strong> Edit history tracks all changes made to AI-generated data,
+                        including before/after values, who made the change, and when it was made.
+                    </li>
+                    <li>
+                        <strong>RICS compliance support:</strong> This audit trail supports compliance with RICS
+                        requirements for AI transparency in surveying, enabling professionals to demonstrate that
+                        appropriate oversight was applied.
+                    </li>
+                    <li>
+                        <strong>Data preservation:</strong> Audit data is preserved even if user accounts are deleted,
+                        ensuring that the compliance record remains intact.
+                    </li>
+                </ul>
+
+                <!-- ==================== 8. RICS & CIOB CONTEXT ==================== -->
+                <h2>8. RICS &amp; CIOB Context</h2>
+                <p>
+                    Rate Goblin AI has been designed with reference to established professional standards for the use
+                    of AI in construction and surveying practice.
+                </p>
+                <ul>
+                    <li>
+                        The platform's approach to AI transparency, confidence scoring, and human oversight has been
+                        <strong>informed by the RICS Global Standard on Responsible Use of AI in Surveying</strong>.
+                    </li>
+                    <li>
+                        It follows <strong>CIOB Code of Practice for Project Management</strong> principles of
+                        transparency, accountability, and record-keeping.
+                    </li>
+                </ul>
+
+                <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1rem 1.25rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+                    <p style="margin: 0; font-weight: 600; color: #92400e;">Important Disclaimer</p>
+                    <p style="margin: 0.5rem 0 0 0;">
+                        Rate Goblin AI is <strong>not</strong> endorsed by, affiliated with, or certified by RICS, CIOB,
+                        or any professional body. References to these standards are descriptive only &mdash; indicating
+                        that the platform's design has been informed by publicly available professional guidance.
+                    </p>
+                    <p style="margin: 0.5rem 0 0 0;">
+                        Users who are RICS or CIOB members remain bound by their own professional obligations and should
+                        satisfy themselves that their use of Rate Goblin AI complies with the requirements of their
+                        professional body.
+                    </p>
+                </div>
+
+                <!-- ==================== 9. OPENAI DATA PROCESSING ==================== -->
+                <h2>9. OpenAI Data Processing</h2>
+                <p>
+                    All AI processing in Rate Goblin AI is performed by <strong>OpenAI</strong>. Here is what you
+                    need to know about how OpenAI handles your data:
+                </p>
+                <ul>
+                    <li>
+                        OpenAI processes data under their <strong>API Terms of Service</strong>.
+                    </li>
+                    <li>
+                        As of March 2023, OpenAI <strong>does not use data submitted through the API to train their
+                        models</strong>. Your commercial data remains confidential and is not used to improve OpenAI's
+                        AI models.
+                    </li>
+                    <li>
+                        OpenAI may retain API inputs and outputs for up to <strong>30 days</strong> for abuse monitoring
+                        purposes, after which they are deleted.
+                    </li>
+                    <li>
+                        OpenAI is a <strong>US-based company</strong>. Data transfers to OpenAI are protected by
+                        appropriate legal safeguards, including the UK Addendum to the EU Standard Contractual Clauses.
+                    </li>
+                    <li>
+                        For full details, see OpenAI's privacy policy at
+                        <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">openai.com/policies/privacy-policy</a>.
+                    </li>
+                </ul>
+
+                <!-- ==================== 10. CHANGES & UPDATES ==================== -->
+                <h2>10. Changes &amp; Updates</h2>
+                <p>
+                    We will update this page whenever our AI usage changes. This includes adding or removing AI models,
+                    changing what data is sent to AI providers, or modifying how confidence scoring and human oversight work.
+                </p>
+                <p>
+                    Where we make <strong>material changes</strong> to our AI usage, we will notify all registered users
+                    by email before the changes take effect. The "Last updated" date at the top of this page will also be
+                    revised.
+                </p>
+                <p>
+                    We encourage you to review this page periodically to stay informed about how AI is used in
+                    Rate Goblin AI.
+                </p>
+
+                <!-- ==================== 11. QUESTIONS ==================== -->
+                <h2>11. Questions</h2>
+                <p>
+                    If you have any questions about how AI is used in Rate Goblin AI, or if you would like further
+                    detail on any of the information provided on this page, please contact us at
+                    <span class="placeholder">[YOUR EMAIL]</span>.
+                </p>
+                <p>
+                    We are committed to answering your questions openly and honestly.
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo" aria-label="Rate Goblin AI Home">
+                        <span aria-hidden="true">&#x1F47A;</span> Rate Goblin <span class="logo-ai">AI</span>
+                    </a>
+                    <p>
+                        AI-powered construction procurement intelligence for UK quantity surveyors.
+                        Extract, benchmark, and optimise contractor rates with confidence.
+                    </p>
+                </div>
+
+                <!-- Product Links -->
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul role="list">
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="docs.html">Docs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul role="list">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                        <li><a href="ai-disclosure.html">AI Disclosure</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="acceptable-use.html">Acceptable Use</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul role="list">
+                        <li><a href="mailto:hello@rategoblin.ai">hello@rategoblin.ai</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rate Goblin AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== COOKIE CONSENT BANNER ========== -->
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-describedby="cookie-banner-text">
+        <div class="cookie-banner-inner">
+            <p id="cookie-banner-text">
+                We use essential cookies to make Rate Goblin AI work. We would also like to set optional
+                analytics cookies to help us improve the service. For more information, see our
+                <a href="cookies.html">Cookie Policy</a>.
+            </p>
+            <div class="cookie-banner-actions">
+                <button class="btn btn-primary btn-sm" id="cookie-accept">Accept</button>
+                <button class="btn btn-outline btn-sm" id="cookie-reject">Reject</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
