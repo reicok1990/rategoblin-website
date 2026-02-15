@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Shield background -->
+  <path d="M24 2L6 10v14c0 11.1 7.7 21.5 18 24 10.3-2.5 18-12.9 18-24V10L24 2z" fill="url(#shieldGrad)" stroke="#1a6b3c" stroke-width="1.5"/>
+  <!-- Goblin face -->
+  <ellipse cx="24" cy="24" rx="12" ry="13" fill="url(#faceGrad)"/>
+  <!-- Pointed ears -->
+  <path d="M12 20L5 11l5 7z" fill="#22c55e" stroke="#16a34a" stroke-width="0.8"/>
+  <path d="M36 20l7-9-5 7z" fill="#22c55e" stroke="#16a34a" stroke-width="0.8"/>
+  <!-- Eyes - glowing -->
+  <ellipse cx="19" cy="22" rx="3.5" ry="3" fill="#0f172a"/>
+  <ellipse cx="29" cy="22" rx="3.5" ry="3" fill="#0f172a"/>
+  <ellipse cx="19" cy="22" rx="2" ry="1.8" fill="#3b82f6"/>
+  <ellipse cx="29" cy="22" rx="2" ry="1.8" fill="#3b82f6"/>
+  <circle cx="19" cy="21.5" r="0.8" fill="#ffffff"/>
+  <circle cx="29" cy="21.5" r="0.8" fill="#ffffff"/>
+  <!-- Brow ridge -->
+  <path d="M14 18.5c2-2 4-2.5 6-1.5" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <path d="M34 18.5c-2-2-4-2.5-6-1.5" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Nose -->
+  <path d="M22 26l2 3 2-3" stroke="#16a34a" stroke-width="1" stroke-linecap="round" fill="none"/>
+  <!-- Grin -->
+  <path d="M18 31c2 2.5 4 3 6 3s4-.5 6-3" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Teeth -->
+  <path d="M20 31l1-1.5 1 1.5" stroke="#f59e0b" stroke-width="0.8" fill="#f59e0b"/>
+  <path d="M26 31l1-1.5 1 1.5" stroke="#f59e0b" stroke-width="0.8" fill="#f59e0b"/>
+  <!-- Crown/gem on forehead -->
+  <circle cx="24" cy="15" r="2.5" fill="url(#gemGrad)" stroke="#f59e0b" stroke-width="0.8"/>
+  <circle cx="24" cy="15" r="1" fill="#ffffff" opacity="0.6"/>
+  <!-- Coin elements at bottom -->
+  <circle cx="16" cy="40" r="3" fill="url(#coinGrad)" stroke="#d97706" stroke-width="0.5"/>
+  <text x="16" y="41.5" text-anchor="middle" font-size="4" font-weight="bold" fill="#92400e">£</text>
+  <circle cx="32" cy="40" r="3" fill="url(#coinGrad)" stroke="#d97706" stroke-width="0.5"/>
+  <text x="32" y="41.5" text-anchor="middle" font-size="4" font-weight="bold" fill="#92400e">£</text>
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="shieldGrad" x1="24" y1="2" x2="24" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="faceGrad" x1="24" y1="11" x2="24" y2="37" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4ade80"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+    <radialGradient id="gemGrad" cx="50%" cy="40%">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </radialGradient>
+    <radialGradient id="coinGrad" cx="40%" cy="35%">
+      <stop offset="0" stop-color="#fcd34d"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </radialGradient>
+  </defs>
+</svg>
