@@ -157,29 +157,43 @@ h1, h2, h3, h4, h5, h6 {
   height: 72px;
 }
 
-.logo {
+.logo,
+.nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
-  color: var(--white);
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.3rem;
 }
 
-.logo-icon {
-  width: 36px;
-  height: 36px;
-  background: var(--primary);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
+.nav-logo:hover { opacity: 0.9; }
+
+.nav-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
+.logo-ai { color: var(--green); }
 .logo span { color: var(--green); }
+
+/* Footer logo */
+.footer-logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer-logo:hover { opacity: 0.9; }
+
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-logo img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
 
 .nav-links {
   display: flex;
