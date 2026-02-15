@@ -161,8 +161,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 48px;
+  gap: 40px;
   height: 68px;
+  flex-wrap: nowrap;
 }
 
 /* Logo in nav — centred */
@@ -175,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-logo:hover { opacity: 0.9; }
 
 .nav-logo-img {
-  height: 42px;
+  height: 48px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -1065,6 +1066,8 @@ h1, h2, h3, h4, h5, h6 {
   .nav-container {
     height: 60px;
     position: relative;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
   .nav-logo-img { height: 36px; }
 
