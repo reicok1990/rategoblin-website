@@ -1,28 +1,27 @@
 /* ══════════════════════════════════════════════════════
-   Rate Goblin AI — Website Interactivity
+   Rates Goblin AI — Website Interactivity
    ══════════════════════════════════════════════════════ */
 
 // ── Mobile Navigation ──
 document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  const navCta = document.querySelector('.nav-cta');
+  const menuToggle = document.getElementById('mobile-menu-toggle');
+  const navLinks = document.getElementById('nav-links');
 
   if (menuToggle) {
     menuToggle.addEventListener('click', () => {
       navLinks?.classList.toggle('open');
-      navCta?.classList.toggle('open');
       const icon = menuToggle.querySelector('span');
       if (icon) icon.textContent = navLinks?.classList.contains('open') ? '\u2715' : '\u2630';
+      menuToggle.setAttribute('aria-expanded', navLinks?.classList.contains('open') ? 'true' : 'false');
     });
 
     // Close mobile nav when clicking a link
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks?.classList.remove('open');
-        navCta?.classList.remove('open');
         const icon = menuToggle.querySelector('span');
         if (icon) icon.textContent = '\u2630';
+        menuToggle.setAttribute('aria-expanded', 'false');
       });
     });
   }
@@ -42,17 +41,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ── Cookie Consent Banner ──
-  const cookieBanner = document.querySelector('.cookie-banner');
+  const cookieBanner = document.getElementById('cookie-banner');
   if (cookieBanner && !localStorage.getItem('rg_cookie_consent')) {
     setTimeout(() => cookieBanner.classList.add('visible'), 1000);
   }
 
-  document.querySelector('.cookie-accept')?.addEventListener('click', () => {
+  document.getElementById('cookie-accept')?.addEventListener('click', () => {
     localStorage.setItem('rg_cookie_consent', 'accepted');
     cookieBanner?.classList.remove('visible');
   });
 
-  document.querySelector('.cookie-reject')?.addEventListener('click', () => {
+  document.getElementById('cookie-reject')?.addEventListener('click', () => {
     localStorage.setItem('rg_cookie_consent', 'rejected');
     cookieBanner?.classList.remove('visible');
   });
