@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════════════════
-   Rates Goblin AI — Website Interactivity
+   Rates Goblin — Website Interactivity
    ══════════════════════════════════════════════════════ */
 
 // ── Mobile Navigation ──
