@@ -247,6 +247,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 48px;
 }
 
+/* Hero centred logo */
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.hero-logo-img {
+  height: 180px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.3));
+}
+
 /* Badge (hero pill) */
 .badge {
   display: inline-flex;
@@ -1114,6 +1128,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 480px) {
   .nav-logo-img { height: 32px; }
+  .hero-logo-img { height: 120px; }
 
   .hero-headline,
   .hero h1 { font-size: 1.8rem; }
