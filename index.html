@@ -37,11 +37,15 @@
 
         <!-- ========== HERO SECTION ========== -->
         <section class="hero" id="hero">
+            <!-- Background video -->
+            <div class="hero-video-wrap">
+                <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+                    <source src="videos/hero-logo.mp4" type="video/mp4">
+                </video>
+                <div class="hero-video-overlay"></div>
+            </div>
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-logo">
-                        <img src="images/logo-full.png" alt="Rates Goblin" class="hero-logo-img">
-                    </div>
                     <span class="badge">&#x1F916; AI-Powered Rate Intelligence</span>
                     <h1 class="hero-headline">
                         Turn Construction Quotes into <em>Market Intelligence</em>
@@ -115,6 +119,52 @@
                         <div class="step-icon" aria-hidden="true">&#x2705;</div>
                         <h3>Decide</h3>
                         <p>Identify potential savings, flag overpriced items, and build an evidence-based position for commercial negotiations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PRODUCT SHOWCASE ========== -->
+        <section class="product-showcase" id="product-showcase">
+            <div class="container">
+                <div class="section-header">
+                    <h2>See It In Action</h2>
+                    <p>From AI-powered dashboards to detailed rate analysis &mdash; built for the way quantity surveyors work.</p>
+                </div>
+
+                <!-- Showcase item 1: Dashboard -->
+                <div class="showcase-item">
+                    <div class="showcase-text">
+                        <span class="showcase-label">Dashboard</span>
+                        <h3>Your Procurement Command Centre</h3>
+                        <p>Get an instant overview of your portfolio &mdash; total quotes, portfolio value, active rate groups, and cost plans. Track AI extraction performance and recent activity at a glance.</p>
+                    </div>
+                    <div class="showcase-media">
+                        <img src="images/screenshots/dashboard-overview.gif" alt="Rates Goblin dashboard showing portfolio overview with stats and charts" class="showcase-img" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Showcase item 2: Quote Detail -->
+                <div class="showcase-item showcase-item--reverse">
+                    <div class="showcase-text">
+                        <span class="showcase-label">AI Extraction</span>
+                        <h3>Quotes Extracted in Seconds</h3>
+                        <p>Upload a PDF or Excel quote and let AI extract every line item, rate, quantity, and amount. Review results with full confidence scoring and one-click sign-off.</p>
+                    </div>
+                    <div class="showcase-media">
+                        <img src="images/screenshots/quote-detail-exploration.gif" alt="Rates Goblin AI quote extraction showing line items and rates" class="showcase-img" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Showcase item 3: Rate Intelligence -->
+                <div class="showcase-item">
+                    <div class="showcase-text">
+                        <span class="showcase-label">Rate Intelligence</span>
+                        <h3>Benchmark Every Rate</h3>
+                        <p>Compare supplier rates across your portfolio with powerful benchmarking tools. Identify outliers, spot trends, and build a data-driven position for negotiations.</p>
+                    </div>
+                    <div class="showcase-media">
+                        <img src="images/screenshots/06-rate-intelligence-overview.jpg" alt="Rates Goblin rate intelligence benchmarking dashboard" class="showcase-img" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -246,7 +296,7 @@
                             <li>&#x2705; NRM classification</li>
                             <li>&#x2705; 3-quote comparison</li>
                         </ul>
-                        <a href="https://app.ratesgoblin.ai" class="btn btn-outline btn-block">Start 14-Day Free Trial</a>
+                        <a href="https://app.ratesgoblin.ai?plan=professional" class="btn btn-outline btn-block">Start Professional Trial</a>
                     </div>
 
                     <!-- Business Plan -->
@@ -267,7 +317,7 @@
                             <li>&#x2705; Up to 5 seats</li>
                             <li>&#x2705; Priority AI processing</li>
                         </ul>
-                        <a href="https://app.ratesgoblin.ai" class="btn btn-primary btn-block">Start 14-Day Free Trial</a>
+                        <a href="https://app.ratesgoblin.ai?plan=business" class="btn btn-primary btn-block">Start Business Trial</a>
                     </div>
 
                     <!-- Enterprise Plan -->
