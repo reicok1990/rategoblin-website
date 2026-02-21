@@ -38,14 +38,15 @@
         <!-- ========== HERO SECTION ========== -->
         <section class="hero" id="hero">
             <!-- Background video -->
-            <div class="hero-video-wrap">
-                <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
-                    <source src="videos/hero-logo.mp4" type="video/mp4">
-                </video>
-                <div class="hero-video-overlay"></div>
-            </div>
+            <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+                <source src="videos/hero-logo.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
             <div class="container">
                 <div class="hero-content">
+                    <div class="hero-logo">
+                        <img src="images/logo-full.png" alt="Rates Goblin" class="hero-logo-img">
+                    </div>
                     <span class="badge">&#x1F916; AI-Powered Rate Intelligence</span>
                     <h1 class="hero-headline">
                         Turn Construction Quotes into <em>Market Intelligence</em>
@@ -78,6 +79,62 @@
                         <span class="stat-icon" aria-hidden="true">&#x1F3DB;</span>
                         <div class="stat-content">
                             <span class="stat-value">RICS &amp; CIOB Informed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PRODUCT SHOWCASE ========== -->
+        <section class="product-showcase" id="showcase">
+            <div class="container">
+                <div class="section-header">
+                    <h2>See It in Action</h2>
+                    <p>Explore the key areas of Rates Goblin — built for how quantity surveyors actually work.</p>
+                </div>
+
+                <div class="showcase-tabs" role="tablist" aria-label="Product features">
+                    <button class="showcase-tab active" role="tab" aria-selected="true" data-tab="dashboard">
+                        &#x1F3E0; Dashboard
+                    </button>
+                    <button class="showcase-tab" role="tab" aria-selected="false" data-tab="quotes">
+                        &#x1F4C4; Quotes
+                    </button>
+                    <button class="showcase-tab" role="tab" aria-selected="false" data-tab="costplans">
+                        &#x1F4CB; Cost Plans
+                    </button>
+                    <button class="showcase-tab" role="tab" aria-selected="false" data-tab="rateintel">
+                        &#x1F4CA; Rate Intelligence
+                    </button>
+                </div>
+
+                <div class="showcase-panels">
+                    <div class="showcase-panel active" data-panel="dashboard" role="tabpanel">
+                        <img src="images/demo-dashboard.png" alt="Rates Goblin dashboard showing portfolio health, top suppliers chart, and recent activity" loading="lazy">
+                        <div class="showcase-caption">
+                            <h3>Portfolio Overview</h3>
+                            <p>At-a-glance metrics — total quotes, portfolio value, rate groups, and cost plans. Visualise top suppliers by value and track recent activity across your projects.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-panel" data-panel="quotes" role="tabpanel">
+                        <img src="images/demo-quotes.png" alt="Rates Goblin quotes management showing supplier quotes with status, costs, and comparison tools" loading="lazy">
+                        <div class="showcase-caption">
+                            <h3>Quote Management</h3>
+                            <p>Upload, organise, and compare contractor quotes. See supplier, reference, total net, cost per unit, and status at a glance. Export to Excel or run side-by-side comparisons.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-panel" data-panel="costplans" role="tabpanel">
+                        <img src="images/demo-costplans.png" alt="Rates Goblin cost plans showing project cost breakdowns with client, total cost, and status" loading="lazy">
+                        <div class="showcase-caption">
+                            <h3>Cost Plan Management</h3>
+                            <p>Build and manage structured cost plans from extracted quote data. Track total costs, cost per square metre, and project status across your portfolio.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-panel" data-panel="rateintel" role="tabpanel">
+                        <img src="images/demo-rateintel.png" alt="Rates Goblin rate intelligence showing market rate analysis, trends, and spread alerts" loading="lazy">
+                        <div class="showcase-caption">
+                            <h3>Rate Intelligence</h3>
+                            <p>Market rate analysis from your extracted quotes — median rates, percentile ranges, trends, and supplier spread. Spot pricing gaps with rate spread alerts.</p>
                         </div>
                     </div>
                 </div>
@@ -119,52 +176,6 @@
                         <div class="step-icon" aria-hidden="true">&#x2705;</div>
                         <h3>Decide</h3>
                         <p>Identify potential savings, flag overpriced items, and build an evidence-based position for commercial negotiations.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== PRODUCT SHOWCASE ========== -->
-        <section class="product-showcase" id="product-showcase">
-            <div class="container">
-                <div class="section-header">
-                    <h2>See It In Action</h2>
-                    <p>From AI-powered dashboards to detailed rate analysis &mdash; built for the way quantity surveyors work.</p>
-                </div>
-
-                <!-- Showcase item 1: Dashboard -->
-                <div class="showcase-item">
-                    <div class="showcase-text">
-                        <span class="showcase-label">Dashboard</span>
-                        <h3>Your Procurement Command Centre</h3>
-                        <p>Get an instant overview of your portfolio &mdash; total quotes, portfolio value, active rate groups, and cost plans. Track AI extraction performance and recent activity at a glance.</p>
-                    </div>
-                    <div class="showcase-media">
-                        <img src="images/screenshots/dashboard-overview.gif" alt="Rates Goblin dashboard showing portfolio overview with stats and charts" class="showcase-img" loading="lazy">
-                    </div>
-                </div>
-
-                <!-- Showcase item 2: Quote Detail -->
-                <div class="showcase-item showcase-item--reverse">
-                    <div class="showcase-text">
-                        <span class="showcase-label">AI Extraction</span>
-                        <h3>Quotes Extracted in Seconds</h3>
-                        <p>Upload a PDF or Excel quote and let AI extract every line item, rate, quantity, and amount. Review results with full confidence scoring and one-click sign-off.</p>
-                    </div>
-                    <div class="showcase-media">
-                        <img src="images/screenshots/quote-detail-exploration.gif" alt="Rates Goblin AI quote extraction showing line items and rates" class="showcase-img" loading="lazy">
-                    </div>
-                </div>
-
-                <!-- Showcase item 3: Rate Intelligence -->
-                <div class="showcase-item">
-                    <div class="showcase-text">
-                        <span class="showcase-label">Rate Intelligence</span>
-                        <h3>Benchmark Every Rate</h3>
-                        <p>Compare supplier rates across your portfolio with powerful benchmarking tools. Identify outliers, spot trends, and build a data-driven position for negotiations.</p>
-                    </div>
-                    <div class="showcase-media">
-                        <img src="images/screenshots/06-rate-intelligence-overview.jpg" alt="Rates Goblin rate intelligence benchmarking dashboard" class="showcase-img" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -432,5 +443,29 @@
     </div>
 
     <script src="js/main.js"></script>
+
+    <!-- Product showcase tab switching -->
+    <script>
+    (function() {
+        const tabs = document.querySelectorAll('.showcase-tab');
+        const panels = document.querySelectorAll('.showcase-panel');
+
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                var target = this.getAttribute('data-tab');
+
+                tabs.forEach(function(t) {
+                    t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                panels.forEach(function(p) { p.classList.remove('active'); });
+
+                this.classList.add('active');
+                this.setAttribute('aria-selected', 'true');
+                document.querySelector('[data-panel="' + target + '"]').classList.add('active');
+            });
+        });
+    })();
+    </script>
 </body>
 </html>
