@@ -230,6 +230,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero {
   background: linear-gradient(135deg, var(--navy-deep) 0%, #1a2744 50%, var(--navy) 100%);
   min-height: 100vh;
+  min-height: 100dvh; /* dynamic viewport height — accounts for mobile browser chrome */
   display: flex;
   align-items: center;
   padding: 80px 0 40px;
@@ -1246,7 +1247,18 @@ h1, h2, h3, h4, h5, h6 {
 
   .mobile-menu-toggle { display: block; }
 
-  .hero { min-height: 100vh; padding: 80px 0 40px; }
+  .hero {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 70px 0 30px;
+  }
+  .hero-logo-img { height: 80px; }
+  .hero-headline,
+  .hero h1 { font-size: clamp(1.6rem, 4vw, 2.5rem); margin-bottom: 10px; }
+  .hero-subtext,
+  .hero p { font-size: 0.95rem; margin-bottom: 16px; line-height: 1.5; }
+  .hero-content { margin-bottom: 16px; }
+  .hero-logo { margin-bottom: 8px; }
 
   .stats-bar { gap: 24px; flex-wrap: wrap; }
 
@@ -1325,16 +1337,29 @@ h1, h2, h3, h4, h5, h6 {
   .container { padding: 0 16px; }
 
   .nav-logo-img { height: 32px; }
-  .hero-logo-img { height: 80px; }
+
+  /* Hero — must fit small phone viewports (667px iPhone SE) */
+  .hero {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 60px 0 20px;
+  }
+  .hero-logo { margin-bottom: 6px; }
+  .hero-logo-img { height: 60px; }
+  .hero-content { margin-bottom: 12px; }
 
   .hero-headline,
-  .hero h1 { font-size: 1.8rem; }
+  .hero h1 { font-size: 1.5rem; margin-bottom: 8px; }
   .hero-subtext,
-  .hero p { font-size: 1rem; }
-  .hero-actions { flex-direction: column; align-items: center; }
+  .hero p { font-size: 0.88rem; margin-bottom: 14px; line-height: 1.45; }
+  .hero-actions { flex-direction: column; align-items: center; gap: 8px; }
   .hero-actions .btn { width: 100%; }
+  .btn-lg { padding: 12px 24px; font-size: 0.92rem; }
 
-  .badge { font-size: 0.72rem; padding: 5px 12px; }
+  .badge { font-size: 0.72rem; padding: 5px 12px; margin-bottom: 8px; }
+
+  .stats-bar { flex-direction: column; align-items: center; gap: 10px; margin-top: 8px; padding-top: 16px; }
+  .stat-item { font-size: 0.82rem; }
 
   .features-grid { grid-template-columns: 1fr; }
   .steps-grid { grid-template-columns: 1fr; }
@@ -1343,7 +1368,6 @@ h1, h2, h3, h4, h5, h6 {
   .showcase-tab { padding: 6px 10px; font-size: 0.72rem; }
 
   .footer-grid { grid-template-columns: 1fr; }
-  .stats-bar { flex-direction: column; align-items: center; gap: 16px; }
 
   /* Pricing cards full-width */
   .pricing-grid { max-width: 100%; }
